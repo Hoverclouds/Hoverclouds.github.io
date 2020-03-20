@@ -1,407 +1,314 @@
-<html>
-  <head>
-  <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>开发 | 飞总吃不饱</title>
-<meta name="description" content="瞎bb的自留地" />
-<link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico?v=1584719915076">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>飞总吃不饱</title>
+<link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://hoverclouds.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://hoverclouds.github.io/styles/main.css">
-
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="alternate" type="application/atom+xml" title="飞总吃不饱 - Atom Feed" href="https://hoverclouds.github.io/atom.xml">
 
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146172203-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-146172203-2');
-</script>
-
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://hoverclouds.github.io">
-  <img class="avatar" src="https://hoverclouds.github.io/images/avatar.png?v=1584719915076" alt="">
-  </a>
-  <h1 class="site-title">
-    飞总吃不饱
-  </h1>
-  <p class="site-description">
-    瞎bb的自留地
-  </p>
-  <div class="menu-container">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146172203-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-146172203-2');
+  </script>
     
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+
+  <meta name="description" content="瞎bb的自留地" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
-  <div class="social-container">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-      
-        <a href="https://github.com/Hoverclouds" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-      
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-      
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
     
-      
-        <a href="https://weibo.com/hoverclouds" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-      
-        <a href="https://www.zhihu.com/people/niyunfei" target="_blank">
-          <i class="fab fa-zhihu"></i>
-        </a>
-      
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
     
-      
-    
-  </div>
+    <a href="https://hoverclouds.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：# 开发
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/cent-os-7-cha-kan-he-guan-bi-fang-huo-qiang/">
-        <h2 class="post-title">Cent OS 7 查看和关闭防火墙</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-08-27
-        </span>
-        <span>
-          1 min read
-        </span>
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        开发
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/hello-gridea/">
-        <h2 class="post-title">Hello Gridea</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-12-12
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-        <a href="https://hoverclouds.github.io/post/hello-gridea/" class="post-feature-image" style="background-image: url('https://hoverclouds.github.io/post-images/hello-gridea.png')">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/cent-os-7-cha-kan-he-guan-bi-fang-huo-qiang/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Cent OS 7 查看和关闭防火墙
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-08-27</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        CentOS 7.0默认使用的是firewall作为防火墙
+查看防火墙状态
+firewall-cmd –state
+
+停止firewall
+systemctl stop firewalld.service
+
+禁止firewall开机启动
+s...
+      </div>
+      <a href="https://hoverclouds.github.io/post/cent-os-7-cha-kan-he-guan-bi-fang-huo-qiang/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/hello-gridea/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Hello Gridea
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2018-12-12</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/zai-win-xi-tong-shang-da-jian-kms-shou-quan-fu-wu-qi/">
-        <h2 class="post-title">在win系统上搭建kms授权服务器</h2>
+      </div>
+      <a href="https://hoverclouds.github.io/post/hello-gridea/" class="btn">
+        Read more
       </a>
-      <div class="post-info">
-        <span>
-          2018-09-04
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/">
-        <h2 class="post-title">linux 下crontab -e 命令插入及保存</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2018-07-05
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/emlog-bo-ke-hou-tai-zhu-ti-flatlab/">
-        <h2 class="post-title">Emlog博客后台主题 FlatLab</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2017-06-03
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/">
-        <h2 class="post-title">【发布】山艺专版WannaCry勒索病毒安全加固工具</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2017-05-15
-        </span>
-        <span>
-          4 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-        <a href="https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/" class="post-feature-image" style="background-image: url('https://7n.blog.singfind.com/08741494863380.png')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/shi-yong-lu-you-qi-zi-jian-ju-yu-wang-tu-po-xiao-nei-cmcc-xian-zhi-de-jie-jue-fang-an/">
-        <h2 class="post-title">使用路由器自建局域网突破校内CMCC限制的解决方案</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2017-02-25
-        </span>
-        <span>
-          6 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-          <a href="https://hoverclouds.github.io/tag/f1mgaBfk9Q/" class="post-tag">
-            # 生活
-          </a>
-        
-      </div>
-      
-        <a href="https://hoverclouds.github.io/post/shi-yong-lu-you-qi-zi-jian-ju-yu-wang-tu-po-xiao-nei-cmcc-xian-zhi-de-jie-jue-fang-an/" class="post-feature-image" style="background-image: url('https://7n.blog.singfind.com/1abb1488029996.jpg')">
-        </a>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/wordpress-cha-ru-b-zhan-shi-pin-de-fang-fa/">
-        <h2 class="post-title">WordPress插入B站视频的方法</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2016-12-17
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/lib-da-jian-shou-ji/">
-        <h2 class="post-title">lib搭建手记</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2015-10-19
-        </span>
-        <span>
-          2 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://hoverclouds.github.io/post/cong-xin-kai-shi/">
-        <h2 class="post-title">从心开始</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2015-08-22
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-          <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
-            # 开发
-          </a>
-        
-          <a href="https://hoverclouds.github.io/tag/YAOwQ3Ffcv/" class="post-tag">
-            # 随感
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
-  <a class="rss" href="https://hoverclouds.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-
-  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
-
-  // This should probably be throttled.
-  // Especially because it triggers during smooth scrolling.
-  // https://lodash.com/docs/4.17.10#throttle
-  // You could do like...
-  // window.addEventListener("scroll", () => {
-  //    _.throttle(doThatStuff, 100);
-  // });
-  // Only not doing it here to keep this Pen dependency-free.
-
-  window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-
-    mainNavLinks.forEach((link, index) => {
-      let section = document.getElementById(decodeURI(link.hash).substring(1));
-      let nextSection = null
-      if (mainNavLinks[index + 1]) {
-        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-      }
-      console.log('section.offsetHeight', section.offsetHeight);
-      if (section.offsetTop <= fromTop) {
-        if (nextSection) {
-          if (nextSection.offsetTop > fromTop) {
-            link.classList.add("current");
-          } else {
-            link.classList.remove("current");    
-          }
-        } else {
-          link.classList.add("current");
-        }
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
-
-</script>
-
-      </div>
     </div>
-  </body>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://hoverclouds.github.io/post-images/hello-gridea.png" alt="Hello Gridea">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/zai-win-xi-tong-shang-da-jian-kms-shou-quan-fu-wu-qi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          在win系统上搭建kms授权服务器
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2018-09-04</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        ⚠️2019.10.6 更新：已重新整理步骤。
+先上地址：kms.singfind.com
+具体搭建流程：
+1.打开冰箱
+2.把大象装进去
+1.下载源码：https://pan.singfind.com/私人存档/kms_v1112.zip...
+      </div>
+      <a href="https://hoverclouds.github.io/post/zai-win-xi-tong-shang-da-jian-kms-shou-quan-fu-wu-qi/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          linux 下crontab -e 命令插入及保存
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2018-07-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+网上虽然是这么说的，
+
+=======================================
+root身份登录到命令行
+输入crontab -e
+按下a键进入到编辑模式
+输入 0 */1 * * * /home/work/sta...
+      </div>
+      <a href="https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/emlog-bo-ke-hou-tai-zhu-ti-flatlab/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Emlog博客后台主题 FlatLab
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-06-03</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        一套非常漂亮的Emlog后台主题模板，你在压缩包里能找到原作者的链接。
+直接放图吧。
+
+
+
+下载地址：FlatLab.zip
+...
+      </div>
+      <a href="https://hoverclouds.github.io/post/emlog-bo-ke-hou-tai-zhu-ti-flatlab/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【发布】山艺专版WannaCry勒索病毒安全加固工具
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-05-15</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        简介
+由于近期被“永恒之蓝”病毒勒索的情况日益严重，且此病毒变种“WannaCry 2.0”已经在传播，我们紧急开发了针对此病毒的安全加固工具，并提供了山东艺术学院专版。本工具可以显著提升您设备的安全性。我校师生可使用它轻松地保障电脑安全。...
+      </div>
+      <a href="https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://7n.blog.singfind.com/08741494863380.png" alt="【发布】山艺专版WannaCry勒索病毒安全加固工具">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/shi-yong-lu-you-qi-zi-jian-ju-yu-wang-tu-po-xiao-nei-cmcc-xian-zhi-de-jie-jue-fang-an/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          使用路由器自建局域网突破校内CMCC限制的解决方案
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-02-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        前几天看空间里 @青大服务站 说青岛大学学生吐槽移动垄断校园网络，大致是校方强制只能使用CMCC类无线网络，并且撤掉了原有的宽带，让学生们很不爽。我校跟青大的情况差不多，一直就没有宽带，学生宿舍上网除了数据流量就只能购买CMCC，某宝价格3...
+      </div>
+      <a href="https://hoverclouds.github.io/post/shi-yong-lu-you-qi-zi-jian-ju-yu-wang-tu-po-xiao-nei-cmcc-xian-zhi-de-jie-jue-fang-an/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://7n.blog.singfind.com/1abb1488029996.jpg" alt="使用路由器自建局域网突破校内CMCC限制的解决方案">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/wordpress-cha-ru-b-zhan-shi-pin-de-fang-fa/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          WordPress插入B站视频的方法
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2016-12-17</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        直接上代码
+&lt;embed id=&quot;STK_137722048114034&quot; width=&quot;440&quot; height=&quot;356&quot; wmode=&quot;transparent&...
+      </div>
+      <a href="https://hoverclouds.github.io/post/wordpress-cha-ru-b-zhan-shi-pin-de-fang-fa/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/lib-da-jian-shou-ji/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          lib搭建手记
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2015-10-19</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        今天尝试着搭建了自己的lib公共库。
+先公布地址：
+http://lib.singfind.com/
+说是lib，实际上就是个类似图床的空间，只不过专门用来存放css、js这类脚本文件，供其它网站调用。
+这个lib采用的是阿里云免费主机，几...
+      </div>
+      <a href="https://hoverclouds.github.io/post/lib-da-jian-shou-ji/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://hoverclouds.github.io/post/cong-xin-kai-shi/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          从心开始
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2015-08-22</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        徘徊了一个月，终于下定决心做自己的博客。算是给心底留一片天地，算是不辜负最初的梦想。
+从今年1月底刚开始玩网到现在，我真的学会了很多。感谢网络，感谢每一个帮助我的人。
+这里，我要用心维护好，因为这才是别人无法打扰的那一片天空。
+...
+      </div>
+      <a href="https://hoverclouds.github.io/post/cong-xin-kai-shi/" class="btn">
+        Read more
+      </a>
+    </div>
+    
+  </div>
+  
+      </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  版权所有 © 2015-2020 SingFind. 飞总の博客 | All Rights Reserved<br>
+鲁ICP备19002147号-1 | Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://hoverclouds.github.io/media/scripts/main.js"></script>
+</body>
 </html>
