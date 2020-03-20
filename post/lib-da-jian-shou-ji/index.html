@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>飞总吃不饱</title>
+<title>lib搭建手记 | 飞总吃不饱</title>
 <meta name="description" content="瞎bb的自留地" />
 <link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico?v=1584719915076">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -91,16 +91,88 @@
   </div>
 </div>
 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              lib搭建手记
+            </h2>
+            <div class="post-info">
+              <span>
+                2015-10-19
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
+                  # 开发
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>今天尝试着搭建了自己的lib公共库。</p>
+<p>先公布地址：</p>
+<p><a href="http://lib.singfind.com/">http://lib.singfind.com/</a></p>
+<p>说是lib，实际上就是个类似图床的空间，只不过专门用来存放css、js这类脚本文件，供其它网站调用。</p>
+<p>这个lib采用的是阿里云免费主机，几乎是国内最好的免费主机。每月10G的流量应该够用。</p>
+<p>现在在纠结，要不要独立一个一级域名出来，做成一个功能更全面的公益网站……</p>
+<p>然而并没有合适的程序，和资金。</p>
+<p>那就先把眼前的做好吧，以后有机会看看需要的话再接着弄。</p>
+<p>接下来，开始充实lib里的内容，比如我今天把雪花代码的js偷了过来，测试后稳定可用，然后就要写一点说明文档，公开文件地址和调用方式……</p>
+<p>再下一步，就是搬迁一些框架，比如类似bootstrap这样的，很好用，但是服务器又不在国内，那么为了提升它的可用性，我就把它放在这个lib里。我用的阿里云主机在青岛，速度啥的绝对没得说，哈哈。</p>
+<blockquote>
+<p>2020.3.20 补充<br>
+开发文档后来确实写了，但搬迁博客的时候删掉了。一方面这货已经基本废弃，另一方面我实在太咕，充其量只是做了一堆常用素材的外链而已。更何况，五年过去，公共CDN已经很发达了，个人开发者不必再自建基础设施，着实是个好事儿。</p>
+</blockquote>
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/vwvYtQ4yr/">开发</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/f1mgaBfk9Q/">生活</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/YAOwQ3Ffcv/">随感</a>
-          
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hoverclouds.github.io/post/yy-wen-xiao-pin-bu-xi-wu-pen/">
+              <h3 class="post-title">
+                #YY文#  #小品#  #不喜勿喷#
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'ddc40f110fef17ae3916',
+    clientSecret: '3154c9c8a107e529ab0bab00db88232e6c190b86',
+    repo: 'hoverclouds.github.io',
+    owner: 'Hoverclouds',
+    admin: ['Hoverclouds'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 

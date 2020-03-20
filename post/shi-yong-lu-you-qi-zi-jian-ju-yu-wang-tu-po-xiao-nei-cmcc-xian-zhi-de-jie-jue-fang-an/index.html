@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>使用路由器自建局域网突破校内CMCC限制的解决方案 | 飞总吃不饱</title>
+<meta name="description" content="瞎bb的自留地" />
+<link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico?v=1584719915076">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://hoverclouds.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146172203-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146172203-2');
+</script>
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hoverclouds.github.io">
+  <img class="avatar" src="https://hoverclouds.github.io/images/avatar.png?v=1584719915076" alt="">
+  </a>
+  <h1 class="site-title">
+    飞总吃不饱
+  </h1>
+  <p class="site-description">
+    瞎bb的自留地
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/Hoverclouds" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+    
+      
+        <a href="https://weibo.com/hoverclouds" target="_blank">
+          <i class="fab fa-weibo"></i>
+        </a>
+      
+    
+      
+        <a href="https://www.zhihu.com/people/niyunfei" target="_blank">
+          <i class="fab fa-zhihu"></i>
+        </a>
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              使用路由器自建局域网突破校内CMCC限制的解决方案
+            </h2>
+            <div class="post-info">
+              <span>
+                2017-02-25
+              </span>
+              <span>
+                6 min read
+              </span>
+              
+                <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
+                  # 开发
+                </a>
+              
+                <a href="https://hoverclouds.github.io/tag/f1mgaBfk9Q/" class="post-tag">
+                  # 生活
+                </a>
+              
+            </div>
+            
+              <img class="post-feature-image" src="https://7n.blog.singfind.com/1abb1488029996.jpg" alt="">
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>前几天看空间里 <a href="http://user.qzone.qq.com/3155602674">@青大服务站</a> 说青岛大学学生吐槽移动垄断校园网络，大致是校方强制只能使用CMCC类无线网络，并且撤掉了原有的宽带，让学生们很不爽。我校跟青大的情况差不多，一直就没有宽带，学生宿舍上网除了数据流量就只能购买CMCC，某宝价格30左右/月，而且只能限制一台设备连接，还有限速，总归是不方便的。<strong>经过一个学期的探索，我现在已经实现了购买一次CMCC，多个设备同时连入，并试图突破限速。</strong></p>
+<p>现将解决方案公开如下，有类似情况的高校可以参考。</p>
+<p>如果本方案有改进，我会在本页随时更新，敬请关注。</p>
+<h3 id="此方案的优点">此方案的优点</h3>
+<ul>
+<li>
+<p>省钱，整个宿舍买一个CMCC账号就可以多人共用。</p>
+</li>
+<li>
+<p>组成局域网，通过路由器组成一个小范围的局域网络，可以方便宿舍里的同学互相传文件，利于♂学习。</p>
+</li>
+</ul>
+<h3 id="详细步骤">详细步骤</h3>
+<p>首先，购买一个带有<strong>无线中继</strong>功能的路由器（如果你的现有路由器不支持此功能，可以尝试通过刷固件来实现），我选择的是斐讯K2路由器，此型号现在在狗东上搞全额返现活动，相当于免费入手，感兴趣的朋友可以自己百度，我后期可能会再开一篇文章讲讲这个路由器。</p>
+<p>好了，现在我们有了路由器，可以来设置一下它。</p>
+<p>将路由器通电，wan口不需要接网线，如果你有电脑，可以把一根网线的一头插入路由器lan口，另一头插到电脑上。这样便可以通过电脑管理路由器。如果没有，就不接网线，用手机管理也可以。路由器通电后默认会生成一个无密码的WiFi热点，手机可以直接连入。</p>
+<p>打开浏览器，进入路由器的管理页面（在路由器机身背面或说明书上有，一般是192.168.0.1或192.168.1.1，也可能是别的），我的路由器是192.168.2.1，第一次打开会要求执行初始设置，网络设置随便搞一下就好，无线设置可以根据自己情况来定。设置好路由器管理密码并牢记，便于以后设置。</p>
+<p>非初次进入会要求输入管理密码，如果你忘了，请参考路由器说明书。</p>
+<figure data-type="image" tabindex="1"><img src="https://7n.blog.singfind.com/16a01488027177.png" alt="" loading="lazy"></figure>
+<p>然后我们进入路由器的“无限扩展”（或“无线中继”，名称可能不同）功能，可以看到类似这样的页面：</p>
+<figure data-type="image" tabindex="2"><img src="https://7n.blog.singfind.com/729c1488027619.png" alt="" loading="lazy"></figure>
+<p>这里默认是关闭的，我们来打开，然后路由器会自动扫描周围的WiFi热点，供你选择，你只需要选择你所在位置周围信号最好的CMCC或其它校内网，加密方式选OPEN（开放）即可。</p>
+<figure data-type="image" tabindex="3"><img src="https://7n.blog.singfind.com/e6cb1488027887.png" alt="" loading="lazy"></figure>
+<p>选定后，保存生效。此时路由器可能会重启，稍等一两分钟就可以了。</p>
+<p>这时，我们用接入了这个路由器的设备访问任意外网网址，便可跳转到CMCC/其它校内网认证页面。</p>
+<figure data-type="image" tabindex="4"><img src="https://7n.blog.singfind.com/294e1488028242.png" alt="" loading="lazy"></figure>
+<p>现在，填入你自己的（或某宝购买的）CMCC/校内网账号密码，并选择自动登录即可。如不选择自动登录，路由器重启或断线后需要重新登录认证，故强烈建议选择自动登录。</p>
+<p>这样，通过认证后，便可以关掉此页面。现在用你的手机、平板电脑、笔记本……连入你路由器的WiFi网络，就不需要认证了。</p>
+<p><strong>以上，是用一台路由器实现突破CMCC单设备登录限制的解决方案。</strong></p>
+<p>下面讲一下突破CMCC网络带宽限制的思路与构想，目前还没有实现，将会在近几天尝试一下，实际效果会在实践后贴出来。</p>
+<p>众所周知在很多高校区域内，移动CMCC校内无线网络大都是有限速的，我想通过路由器模拟多用户拨号的方式，让CMCC网络服务器“以为”我的路由器是多个设备，以此向我的路由器执行多倍发包，这样路由器就能收到更多的数据，实现突破限速。**由于大多数路由器官方并不提供虚拟多拨功能，所以****这种方式需要给路由器刷写第三方固件，不太适合小白折腾，高端玩家可以尝试。**思路提供给大家，具体固件和刷写方式，由于路由器型号不同，请自己百度。</p>
+<p>我会在本月底进行初步尝试，不论成功与否，都会在第一时间将实况和分析更新到这篇文章。敬请期待。</p>
+<figure data-type="image" tabindex="5"><img src="https://7n.blog.singfind.com/1abb1488029996.jpg" alt="" loading="lazy"></figure>
+<hr>
+<p><code>3.31UPDATE</code></p>
+<p>事实上，这个方法月初就测试失败了……<s>主要还是因为懒，所以</s>一直没有更新上来。刷了好几次路由器，以至于不小心把mac地址刷变化了，重新买了CMCC，好亏qaq。</p>
+<p>后来请教了师哥，才知道这个方法只适用于PPPOE拨号方式上网的。所以，前面你看到的那些，<strong>都行不通</strong>。至于你花了好久才看完，别打我呀【ε=ε=ε=┏(?ロ?;)┛</p>
+<p>然后又到了月底该买CMCC的时刻，我又乖乖给移动付了钱- -。今天跟济南联通的老周说，你们快来我校拉网线吧，真受不了CMCC了。答曰：正在想办法。我还能说什么呢，等着吧。</p>
+<hr>
+<p><strong>此帖到此结束，不会再更新。</strong></p>
+<p><s>但我还会想其它方法上网的</s></p>
+<p>看完的小伙伴欢迎评论区冒个泡，爱你们////////////</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%AD%A4%E6%96%B9%E6%A1%88%E7%9A%84%E4%BC%98%E7%82%B9">此方案的优点</a></li>
+<li><a href="#%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4">详细步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hoverclouds.github.io/post/bu-wang-chu-xin-fang-de-shi-zhong/">
+              <h3 class="post-title">
+                不忘初心，方得始终。
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'ddc40f110fef17ae3916',
+    clientSecret: '3154c9c8a107e529ab0bab00db88232e6c190b86',
+    repo: 'hoverclouds.github.io',
+    owner: 'Hoverclouds',
+    admin: ['Hoverclouds'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://hoverclouds.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

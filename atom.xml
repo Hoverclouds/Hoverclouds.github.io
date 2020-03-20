@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hoverclouds.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-03-20T11:32:31.310Z</updated>
+    <title>飞总吃不饱</title>
+    <updated>2020-03-20T15:59:07.748Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hoverclouds.github.io"/>
     <link rel="self" href="https://hoverclouds.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>瞎bb的自留地</subtitle>
     <logo>https://hoverclouds.github.io/images/avatar.png</logo>
     <icon>https://hoverclouds.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 飞总吃不饱</rights>
+    <entry>
+        <title type="html"><![CDATA[Cent OS 7 查看和关闭防火墙]]></title>
+        <id>https://hoverclouds.github.io/post/cent-os-7-cha-kan-he-guan-bi-fang-huo-qiang/</id>
+        <link href="https://hoverclouds.github.io/post/cent-os-7-cha-kan-he-guan-bi-fang-huo-qiang/">
+        </link>
+        <updated>2019-08-27T02:58:00.000Z</updated>
+        <content type="html"><![CDATA[<p>CentOS 7.0默认使用的是firewall作为防火墙<br>
+查看防火墙状态<br>
+firewall-cmd –state<br>
+停止firewall<br>
+systemctl stop firewalld.service<br>
+禁止firewall开机启动<br>
+systemctl disable firewalld.service</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://hoverclouds.github.io/post/hello-gridea/</id>
@@ -43,47 +58,224 @@
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[心情复杂…]]></title>
-        <id>https://hoverclouds.github.io/post/xin-qing-fu-za/</id>
-        <link href="https://hoverclouds.github.io/post/xin-qing-fu-za/">
+        <title type="html"><![CDATA[在win系统上搭建kms授权服务器]]></title>
+        <id>https://hoverclouds.github.io/post/zai-win-xi-tong-shang-da-jian-kms-shou-quan-fu-wu-qi/</id>
+        <link href="https://hoverclouds.github.io/post/zai-win-xi-tong-shang-da-jian-kms-shou-quan-fu-wu-qi/">
         </link>
-        <updated>2017-03-09T17:51:00.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="近期主要项目安排">近期主要项目安排</h3>
-<p>光尘传媒官网跟新</p>
-<p>微信商城开发与搭建、合作洽谈</p>
-<p>无线局域网络环境建设解决方案</p>
-<p>内网建设解决方案</p>
-<p>货源与渠道整理</p>
-<hr>
-<h3 id="以下碎碎念前方高能">以下碎碎念【前方高能】</h3>
-<p>这篇博客删了写写了删，一肚子想说的却不知道从何说起。</p>
-<p>但我急于记下现在的感受。哪怕是一丝一毫。</p>
-<p>开学多长时间了，从艺考服务到现在，满打满算一个月。现在是3月10号的凌晨，周五。第三周即将结束。</p>
-<p>学校里，学生会换届结束了。送别老主席团，我们开始了新一年的工作。网络通讯部改成了媒体运营部，设两个支部，接下来我们首先筹备了两个大的项目，建设音乐学院。</p>
-<p>网络上，艺考服务结束后，广强来山东玩了一趟，我们俩去烟台找了中乐。度过了愉快的两三天。他回去后，我们便一步步部署微信商城的相关事宜。现在他申请下了微信支付接口，也在某东北科技公司那里做了个商城，同时拿到了一些货源。前几天，我根据现有的商城，利用网上的代码自己仿制了一套程序，本地测试效果还可以，就是还没配好服务器环境，慢慢来吧。尽量以后还是用我们自己的服务器做。我给我们的微信商城起名“数聚云商”，足以说明了我们对数据的重视。未来时代，数据就是价值，拥有数据便拥有了一切。</p>
-<p>周三上午跟某人表白被拒绝了，想归于头脑发热一时冲动，却也是蓄谋已久的。反思了一天多，到底是自己的错。even说，最美的时光都是你爱他的时候，恋爱并不是美好的，心中有一个记挂的人才是最幸福的。我举双手双脚表示赞成。</p>
-<figure data-type="image" tabindex="1"><img src="https://7n.blog.singfind.com/e8241489078790.png" alt="" loading="lazy"></figure>
-<p>其实一开始难过的，是当时没想到她不知道我喜欢她，到现在都不信。所以表白的时候一直步步紧逼，自以为很硬气实际上没有一点绅士风度。于是周三整整一天都不在状态，拉着世恩出去唱歌，各种浪。甚至发小视频到朋友圈，告诉大家我很好，很开心。</p>
-<p>我真幼稚。</p>
-<p>冷静之后想想，我终于把自己玩进去了，佩服我自己。表白时口口声声说的“我不缺友情我缺你”，实际上我就此失去了那份纯洁的友情，也没得到所谓的爱情。悔不当初啊！没用了。这段感情我培养了半年，然后亲手被我自己半个小时毁掉。真是年轻气盛，不懂得分寸。还好人家女孩子知书达理，够给我面子了。谢谢她。</p>
-<p>去年还是前年啊，阿喵说我是中央空调，我当时还不信，现在信了。师姐们都数落我，这样太暖的话给不了女孩子安全感。是病得治。无非我对每个人都是付出真心去交往的，可能还把握不好那个度吧，挺无语的……</p>
-<p>儿女情长并不是生活的全部，所以无论我私下里怎么难过，还得抬头面对。不逃避，勇敢面对，做好自己该做的，就不孬……这周专业课跟和声都没上，老师出去开会了。周四视唱练耳能感觉到有难度了，虽不至于吃力但仍要多练。本想拉着某人一起练的，课都备了她不来，那拉倒吧。听感真不是一朝一夕能练出来的，我高中时要不是没事儿就自己练，仅凭课上那点时间是绝对学不好的。</p>
-<p>今晚大脸说要帮我好好改善改善形象，我同意了。暂且先照做，试试就试试。哼。白天做了个新发型，三七，往上吹那种，回来室友见了我都惊呼林志炫。哈哈哈，窃喜。是该整整外形了。也顺便，调整调整心态。别就此咸鱼下去，变优秀才是王道。</p>
-<p>噢对了记得多读书。每次见某人上课都带着一本书，而且好像看得还挺快的……这方面要向她多学习，我之前买的一堆书，虽然也在看，但特磨叽，还是得提高效率吧。李院的《檀香刑》5月份就要演了，我得赶紧看完原著，然后把剧本吃透。这大概是本学期首当其冲的大事件了。</p>
-<p>还有啊我的路由器成功下车了，那篇博文还没更新，改天吧，我已经困（lan）到一定程度了。</p>
-<p><em>最后，even师姐写给我的一段话。首先感谢她，然后牢记。</em></p>
-<blockquote>
-<p>常常对人真心的祝福，是一个好习惯。那么，从现在开始，你应当常常祝福。</p>
-<p>人曾说过：这是我自己的选择，这口锅就让我来背。</p>
-<p>可是事实最大，发生的不能装傻，更不能否认，不能否定自己的情感，也不能承担事实的分量，只能背着手相对走着，你只要不再伸出手，她就没有拒绝你的理由了。</p>
-<p>可是谁也不能说你错了，你不能控制自己，正像饿了就要吃饭，渴了就要喝水，开心了就笑，难过了就哭。天性里对情感的控制，很难做到理智，更何况你是一个热血的青年人，更何况对方真的有小细节让你心跳。</p>
-<p>今后，你看到了那个人就会心跳，早安午安晚安，通通都想说给那个人听，离得近了，你会脸红，有时候好想念自己傻乎乎去莽撞做事的样子，有时候好像抱着酒再喝一次，却怕那个人喝的脸红红的你却喝不下了，更怕你喝的多了，回头就见不到那个人了。</p>
-<p>可是，你要告诉自己。</p>
-<p>只要见到，就能连影子都印到脑袋里面的那个人，不需要被你天天粘在眼前，闭上眼睛，哪里都是你们相遇的地点。只要听到，哪怕听电话里他手边风的声音，都是带有他呼吸的美妙旋律。</p>
-<p>只要有心去喜欢，就一定能理智的不要打扰，只要有心喜欢，就一定能容易满足的看一眼就好，只要有心喜欢，就一定能够安静的保存美丽的时光，只要有心喜欢，就一定能够控制住心里的火苗。</p>
-<p>就当是你要走路静悄悄的，那个人才能睡个好觉。</p>
+        <updated>2018-09-03T18:05:00.000Z</updated>
+        <content type="html"><![CDATA[<p>⚠️<em>2019.10.6 更新：已重新整理步骤。</em></p>
+<p>先上地址：kms.singfind.com</p>
+<p>具体搭建流程：</p>
+<p><s>1.打开冰箱</s></p>
+<p><s>2.把大象装进去</s></p>
+<p>1.下载源码：<a href="https://pan.singfind.com/%E7%A7%81%E4%BA%BA%E5%AD%98%E6%A1%A3/kms_v1112.zip">https://pan.singfind.com/私人存档/kms_v1112.zip</a></p>
+<p>这里贴出项目原地址：<a href="https://github.com/Wind4/vlmcsd">https://github.com/Wind4/vlmcsd</a></p>
+<p>我已经打包好了win系统需要的 binaries\Windows\intel\vlmcsd-Windows-x64.exe或vlmcsd-Windows-x86.exe，请根据你的系统选择64位还是32位服务端。</p>
+<p>2.解压，放到C盘根目录，并改名为 vlmcsd.exe。</p>
+<p>3.用管理员用户运行命令</p>
+<pre><code>cd c:\kms
+vlmcsd –s –U /n –l c:\kms\vlmcsd.log
+</code></pre>
+<p>此处小写-s为安装为服务,大写-S为移除服务，在vlmcsd.log可查看已经激活的相关信息。</p>
+<p>4.再执行命令services.msc在“服务”中将Key Management Server服务设置为自动，并启动。</p>
+<p>5.这样kms服务端就安装好了，另外不要忘记在防火墙中将1688端口对外开放，因为KMS是通过1688端口提供激活服务的，这样别的服务器或电脑才能通过这个KMS服务器激活系统和office。</p>
+<p>6.解析域名。</p>
+<p>7.在需要激活的电脑上，以管理员权限运行命令：</p>
+<pre><code>slmgr /skms kms.singfind.com
+slmgr /ato
+slmgr /xpr</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[linux 下crontab -e 命令插入及保存]]></title>
+        <id>https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/</id>
+        <link href="https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/">
+        </link>
+        <updated>2018-07-05T13:18:00.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>网上虽然是这么说的，</p>
 </blockquote>
-<p>好了。Too much，电脑刚好写没电，晚安。</p>
+<p>=======================================</p>
+<p>root身份登录到命令行</p>
+<p>输入crontab -e</p>
+<p>按下a键进入到编辑模式</p>
+<p>输入 0 */1 * * * /home/work/start-service.sh</p>
+<p>同时按下ctrl+c退出编辑模式</p>
+<p>按下shift+: 输入wq 退出 crontab</p>
+<p>=======================================</p>
+<blockquote>
+<p>但是一直不成功，很是无奈。后来看提示，</p>
+</blockquote>
+<p>=======================================</p>
+<p>Select an editor.  To change later, run ’select-editor’.</p>
+<ol>
+<li>/bin/ed</li>
+<li>/bin/nano        &lt;—- easiest</li>
+<li>/usr/bin/vim.tiny</li>
+</ol>
+<p>Choose 1-3 [2]: 1</p>
+<p>========================================</p>
+<p>恍然明白，要先选择一个编辑器。我选择了3，再试，果然成功！</p>
+<p>原文作者：<a href="https://blog.csdn.net/avatar1912/article/details/25656489">avatar1912</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2016-2017学年度年终总结]]></title>
+        <id>https://hoverclouds.github.io/post/2016-2017-xue-nian-du-nian-zhong-zong-jie/</id>
+        <link href="https://hoverclouds.github.io/post/2016-2017-xue-nian-du-nian-zhong-zong-jie/">
+        </link>
+        <updated>2017-06-24T16:55:00.000Z</updated>
+        <content type="html"><![CDATA[<p>这学期马上就要结束了，来草草写一点总结，各方面的吧。</p>
+<h3 id="一-时间线大事记">一、时间线大事记</h3>
+<ul>
+<li>2016.6 高考，一切顺利</li>
+<li>2016.7 被山东艺术学院音乐学院作曲系录取，建立艺术沙龙网，开发维护光尘传媒官网</li>
+<li>2016.9 <strong>入学</strong>、军训，生平第一次住宿舍，不太适应</li>
+<li>2016.10 <strong>加入音乐学院学生会</strong></li>
+<li>2017.1 参与杨晓飞与他的学生音乐会</li>
+<li>2017.2 参与音乐学院招生艺考服务，跟小强见面，并开始由QQ转型微信营销</li>
+<li>2017.3 学生会换届、转正，正式开始筹备《檀香刑》排练相关工作，<strong>创立新品牌“数聚云商”</strong>，展开对微信开发的研究</li>
+<li>2017.4 加入《檀香刑》音乐排练</li>
+<li>2017.5 加入《檀香刑》戏剧排练，19岁啦</li>
+<li>2017.6 <strong>歌剧《檀香刑》首演</strong></li>
+</ul>
+<h3 id="二-这一年的所作所为">二、这一年的所作所为</h3>
+<p>1.考学，这大概是最大的成就，也是人生巅峰，后面越来越走下坡路【笑】<br>
+2.跟着学院完成了歌剧《檀香刑》的排演，学到很多东西，长了很多见识<br>
+3.加入学生会并摸爬滚打干了一年。<strong>学生会确实是个锻炼人的地方，我有点吃不消，有好多次退会的念头，但都坚持干下来了。</strong> 因此投入的精力，对学业也有一些影响。但，<strong>这是我自己选择的路，我没有后悔的余地，也更不会后悔。</strong><br>
+3.认真喜欢了一个姑娘，但没有认真追。有些人有些事，很多安排都是注定的，纵使我主观上不愿相信，也改变不了。所以没下很多工夫。很多人不理解我的做法，着实正常，因为我自己大多数时候也不理解【笑】。她不幸见识了我的很多幼稚和自以为是，我很感谢她。她是个很优秀的人，身上有很多闪光点值得我学习<br>
+4.认识了一堆<strong>可以共穿一条裤子的同学</strong>，尤以室友为甚，很感激能遇到一帮包容我爱护我的室友，下辈子当牛做马……我会给他们喂草吃的【笑】。在办公室有很多年轻有为的师哥师姐，像我这种傻白甜，平时跟他们一起玩玩就能学到很多。譬如even、晓睿、洋哥、佳哥……包括不少老师，晓飞、龙哥、老肖这些，能跟他们达成一种亦师亦友的关系，真的很不错<br>
+5.学业上，主要是专业上，进展不大，第一学期学的是考学前的东西，而下学期，几乎全被歌剧耽误了。我自己有时会仨瓜俩枣地找点什么学学，总归还是不系统，时常被老郭唠叨。<strong>挺对不住老郭的</strong>，大二好好上课吧<br>
+6.自己手里的项目。目前光尘的网站快到期了，下一年的合作方式，会跟他们公司协商，待定。数聚云商还在继续开发，微信商城和淘宝客已经日益完善，但是除了让朋友参与内测，并没有推广运营<br>
+7.关于大家理解的我所谓的“黑客”行为，其实就是一些社工+数据运用的小伎俩。我用它们干成过一些事，也干砸过一些事。这一年，我在技术上取得了不少突破（对自己而言），但始终，<strong>我还是没能弄明白技术的最终价值</strong>。我只粗略地知道，技术应该为我所用，却不知道应该如何用好它。我只是在盲目抓取资源，并运用手头的资源。比如我不擅长与人交流，就试图用技术手段去了解他们。事实上，我的技术是不完善的，而我以这种方式了解到的人，形象也是不全面的<br>
+8.说到梦想。我至今仍然清楚地记得我的梦想：<strong>互联网+音乐</strong>。今天我仍然在同时学习这两个方向。音乐在学校里学，互联网自己想办法自学。这里提一句，我们在筹备一个国家级的“互联网+”创业大赛，我们打算做互联网+教育，而且是跟音乐沾边的教育。如果这个项目能成，也算是在我梦想的道路上又前进了一步<br>
+9.又长大了一岁，对自己、对事物的认知又深了一度。当升入一个新的大环境之后，认识到了自己才疏学浅，以及为人处事中的很多道理。其中学校里教会了我很多，而<strong>学生会，磨平了我性格中的很多棱角</strong>。但我仍然有很多缺点，比如拖延症、做事不严谨，对于成长为一个优秀的人，还道阻且长<br>
+10.最大的感悟：信任不是相互的。这一结论的得出，归功于我对第7条中技术的运用。尤其是现今DT时代，你选择相信人还是相信一堆数据，是个很值得探讨的话题</p>
+<h3 id="三-展望未来">三、展望未来</h3>
+<ol>
+<li>如果按照我的梦想，应该划分到互联网行业。那就应该去深入学习开发、营销方向，对于作曲专业的考研，可能帮助就不大。而我的师长，是希望我考研的。音乐类就业难度大、路子窄，文凭是很重要的，知识亦然。如果要往专业的方向发展，就必须考研。我还给自己准备了一条路，报名准备学习教师资格证考试的有关内容。这些都还早，不管往哪个方向发展，都提早做打算，为未来铺好路。<strong>希望我将来为自己选择的路，也不会让自己用后半辈子去后悔。</strong><br>
+2.学生会，我猜我还会继续干下去，原因不详。入校前就知道这是个锻炼人的地方，只是没想到这么锻炼人【笑】。我这一年在这里学到的，远比书本上的东西要多、要丰富<br>
+3.感情什么的还是算了吧。不是受了打击，而是自知不擅与人交流。等啥时候成熟点了，有能力了，再谈也不迟。<strong>丰富自我，让自己成为有内涵的人，从多方面讲都是好的。</strong><br>
+4.<strong>把更多精力放在专业上。</strong> 虽说“互联网+音乐”是互联网在先，但我现在的专业是音乐，是首先必须学好的。学好专业，是上一条“成为有内涵的人”的先决条件之一<br>
+5.运营好手头的项目，尽量能组建一个有能力的团队，<strong>尽快摆脱财政亏空</strong>。抓好机遇<br>
+6.在学好技术的同时，<strong>端正三观，让技术真正做到为我所用。</strong> 做好理论与实践相结合，多获取经验<br>
+7.铭记梦想，坚定方向。在成长的道路上，摸爬滚打不要紧，至少要一步一个脚印，走得稳重、踏实</li>
+</ol>
+<p>旧的一年已经过去，即将迎来新的一学年。两个月（可能不到【笑】）假期给自己定几个小目标，希望不要跟去年暑假一样虚度。<br>
+下一年，对自己最低的要求：<strong>比今年进步更大。</strong></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于本学期旷宿情况的相关说明及反思]]></title>
+        <id>https://hoverclouds.github.io/post/guan-yu-ben-xue-qi-kuang-su-qing-kuang-de-xiang-guan-shuo-ming-ji-fan-si/</id>
+        <link href="https://hoverclouds.github.io/post/guan-yu-ben-xue-qi-kuang-su-qing-kuang-de-xiang-guan-shuo-ming-ji-fan-si/">
+        </link>
+        <updated>2017-06-06T15:22:00.000Z</updated>
+        <content type="html"><![CDATA[<p><span style="font-size: 16px; line-height: 1.5;">本学期（2016-2017学年度第二学期），自5月份以来，我没有按照学校有关规章制度，每晚在宿舍打卡，造成了一系列旷宿。作为一名学生干部，给同学、给班级、给学校，带来了严重的<span style="color: #e53333;"><strong>恶劣影响</strong></span>。现反思并简述如下。</span></p>
+<p><span style="font-size: 16px;"><span style="line-height: 1.5;">本学期伊始，我校开展了民族歌剧《檀香刑》的排练。我作为音乐学院学生会媒体运营部干事，被光荣地安排到歌剧剧组字幕组工作。本学期4、5月，我们的排练越发紧张。有时，我们会排练到晚上，或者在办公室安排工作，直到十点、十一点，甚至凌晨……身为学生干部，我与我的同窗们都牟足了劲儿，希望能干好这项全院为之倾巢出动的工作，这不仅是为母校出力，为自己的老师增光，更是为了自己能在剧组中多学到一些东西，积累经验，提升自己，将来更好地为学习服务，也是为自己以后工作就业做准备。然而，我<strong><span style="color: #e53333;">没能很好地严格要求自己</span></strong>，以工作为借口，逃避打卡，造成旷宿，且<strong><span style="color: #e53333;">没有及时补救</span></strong>，补假条消旷宿。简单地讲，是<strong><span style="color: #e53333;">对自己的放纵、不负责</span></strong>，更深刻的是，我对学校规章制度的熟视无睹，与不认真贯彻落实。作为一名学生干部，我本应严格贯彻落实我校相关政策，为同学们做好</span><span style="font-size: 16px;"><span style="line-height: 1.5;">表率。但我不仅没有做到，还<strong><span style="color: #e53333;">给自己造成了巨大伤害</span></strong>?</span><span style="font-size: 16px; line-height: 1.5;">?</span></span></span></p>
+<blockquote>
+<p><span style="font-size: 16px;"><span style="font-size: 16px; line-height: 1.5;"><span style="color: #999999;">     </span><span style="color: #999999;">  </span><em><span style="color: #999999;"> 山东艺术学院学生指纹考勤及晚间安全管理规定 - 山艺院字[2016]126号</span></em></span><br>
+</span></p>
+<p class="MsoNormal" style="text-indent: 28pt; line-height: 150%;" align="left"><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>第七条规定：一学期内，夜不归一至两次者，由二级学院给予</em></span><b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>通报批评</em></span></b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>；累计三至四次者，给予</em></span><b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>警告</em></span></b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>处分；累计五至六次者，给予</em></span><b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>严重警告</em></span></b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>处分；累计七至十次者，给予</em></span><b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>记过</em></span></b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>处分；累计十一至十三次及其以上者，给予</em></span><b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>留校察看（含）以上</em></span></b><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>处分。</em></span></p>
+<p class="MsoNormal" style="text-indent: 28pt; line-height: 150%;" align="left"><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>第八条规定：对夜不归宿的学生，</em></span><u><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>由该生所在二级学院及时对其进行批评教育并让其写出书面检讨</em></span></u><span style="font-size: 16px; line-height: 1.5; color: #999999;"><em>，通报批评由二级学院直接做出，警告以上处分由二级学院提出处理意见，报学生处，经学校批准后做出处理。</em></span></p>
+</blockquote>
+<p><span style="font-size: 16px;">这些，都是我在以往没有认识到的。是我的愚昧无知，和幼稚单纯的行为，造成了今天的恶果。<strong><span style="color: #e53333;">为此，我应当为自己的行为，付出全部责任。</span></strong></span></p>
+<p><span style="font-size: 16px;">每一项工作，都应该努力，做到最好。人无完人，但应当尽力去做一个完善的人。因为在外工作就耽搁了打卡，能成为正当理由吗？显然是不能的。而我也不禁反思、总结，自己在工作时，是否真的尽力了？是不是每时每刻都全神贯注、保证效率，然而还是没有赶上打卡？很遗憾，答案是否定的。松懈、懒散，是我以往工作中甩不掉的关键词。为什么会这样？大学生了，我不应该再依赖他人的督促，应该积极主动，认真对待每一份工作，担起肩上的每一份责任。显然，我没有做到，做得远不够好。</span></p>
+<p><span style="font-size: 16px;">回想一个学期以来，我一直在努力平衡自己的学习、工作、业务和生活琐事，但直到邻近期末，都没有平衡好，顾全一方面，就总是会有一些方面漏掉。就比如这打卡。还有更多更多。今天宿舍管理方面东窗事发，只是暴露了我在这一块的问题，事实上还有很多很多问题，等待着被发现、解决……我生活中，还有很多需要去完善的。今天的事情再次警醒我，做好每一件事，每一方面都要顾及到。因为很多时候，可能因为我的失误，连累其他人一起遭殃。</span></p>
+<p><span style="font-size: 16px;">我一直在努力，试图做一个完善的人。但今天的事情告诉我，<strong><span style="color: #e53333;">我还差得很远很远</span></strong>。<strong>我会汲取这次的教训，立刻改正自己，端正态度，时刻严格要求自己，从小事做起，从每天按时打卡做起，争取在以后的工作中，得到更多人的肯定，使自己得以真正成长。同时，认真贯彻落实学校的规章制度，珍视自己学生干部的身份，为其他同学做好表率，督促身边同学遵守学校有关规定，做文明守纪的大学生。</strong></span></p>
+<p><span style="font-size: 16px;">希望学校能给我一个<strong><span style="color: #337fe5;">将功补过</span></strong>的机会，<span style="color: #009900;"><strong>不求原谅，但求弥补赎罪。不求宽恕，但求问心无愧。</strong></span></span></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Emlog博客后台主题 FlatLab]]></title>
+        <id>https://hoverclouds.github.io/post/emlog-bo-ke-hou-tai-zhu-ti-flatlab/</id>
+        <link href="https://hoverclouds.github.io/post/emlog-bo-ke-hou-tai-zhu-ti-flatlab/">
+        </link>
+        <updated>2017-06-03T15:11:00.000Z</updated>
+        <content type="html"><![CDATA[<p>一套非常漂亮的Emlog后台主题模板，你在压缩包里能找到原作者的链接。</p>
+<p>直接放图吧。</p>
+<p><img src="https://7n.blog.singfind.com/c8f71496503001.png" alt="" loading="lazy"><br>
+<img src="https://7n.blog.singfind.com/78931496503005.png" alt="" loading="lazy"><br>
+<img src="https://7n.blog.singfind.com/d1bb1496503007.png" alt="" loading="lazy"></p>
+<p>下载地址：<a href="https://7n.blog.singfind.com/FlatLab.zip">FlatLab.zip</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【发布】山艺专版WannaCry勒索病毒安全加固工具]]></title>
+        <id>https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/</id>
+        <link href="https://hoverclouds.github.io/post/fa-bu-shan-yi-zhuan-ban-wannacry-le-suo-bing-du-an-quan-jia-gu-gong-ju/">
+        </link>
+        <updated>2017-05-15T13:51:00.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="简介">简介</h3>
+<p>由于近期被“永恒之蓝”病毒勒索的情况日益严重，且此病毒变种“WannaCry 2.0”已经在传播，我们紧急开发了针对此病毒的安全加固工具，并提供了山东艺术学院专版。<!-- more --><strong>本工具可以显著提升您设备的安全性。我校师生可使用它轻松地保障电脑安全。</strong> 此工具可以对未感染病毒的win7、win10及一系列windows服务器系统进行一键加固。加固后，你的电脑将不会再轻易被永恒之蓝“WannaCry”系列病毒侵犯。</p>
+<h3 id="使用说明">使用说明</h3>
+<p>下载好文件，直接双击打开</p>
+<figure data-type="image" tabindex="1"><img src="https://7n.blog.singfind.com/a5f91494863150.png" alt="" loading="lazy"></figure>
+<p>进入主界面，根据提示选择，输入数字0-9中任意一个，并回车。</p>
+<figure data-type="image" tabindex="2"><img src="https://7n.blog.singfind.com/117b1494863261.png" alt="" loading="lazy"></figure>
+<p>当提示加固成功后，方可退出程序。</p>
+<figure data-type="image" tabindex="3"><img src="https://7n.blog.singfind.com/08741494863380.png" alt="" loading="lazy"></figure>
+<h3 id="qa">Q&amp;Ａ</h3>
+<p>1.为什么有两个版本？</p>
+<p>程序分为普通版与增强版，如果您的设备经常办公，需要局域文件和打印机共享服务，请使用此普通版；如需更强的防御性能，请使用增强版。</p>
+<p>普通版仅关闭系统的445端口，增强版则会关闭系统的135、137、138、139、445端口。</p>
+<p>2.什么是“hosts文件加固”？</p>
+<p>“hosts文件加固”是本程序1.5版本新增的加固模式，原理是通过修改系统文件，让病毒以为连接成功某域名，从而停止破坏。此功能可能会在wannacry病毒的变种版本中失效，但仍建议您运行一次。</p>
+<p>3.我使用了这个工具，就能确保不被wannacry系列病毒入侵了吗？</p>
+<p>不是的。没有人可以保证您的电脑足够安全。所以请在运行本程序后，尽快下载微软官方的补丁包进行安装。补丁下载地址：https://technet.microsoft.com/zh-cn/library/security/MS17-010</p>
+<p>4.运行这个程序的时候，杀毒软件为什么会弹出风险提示？</p>
+<p>由于需要修改系统文件（hosts），或调整本地防火墙策略，需要较高的权限，偶尔会出现杀毒软件提示风险现象，属于正常情况。请选择允许（或忽略）即可。</p>
+<p>5.有传言说wannacry病毒可以在Linux系统的wine环境下运行，请问此程序会适配Linux系统吗？</p>
+<p>由于Linux桌面终端机较少，且暂未在Android平台发现感染病毒现象，故暂时不做适配。</p>
+<p>6.后期病毒出了新变种怎么办？这个程序还会更新吗？</p>
+<p>会的，只要在我的能力范围内，会一直为大家更新下去。届时所有更新都发布在这个页面上，请将本页网址加入收藏，随时关注程序最新动态。</p>
+<h3 id="更新日志">更新日志</h3>
+<p><code>5.15Update</code>  V1.5</p>
+<p>程序调整为两个分支版本，普通版和增强版，用户可以根据实际需求选择版本。</p>
+<p>新增 Win8操作系统的适配，与Win2008系统的适配。</p>
+<p>新增[hosts加固]模式，欺骗病毒连接某域名。</p>
+<p>程序发布页（本页面）上线。</p>
+<p><code>5.14Update</code>  V1.1</p>
+<p>程序上线，首发于 搭伙山艺 公众号。</p>
+<hr>
+<p>免责声明：本程序免费使用，保证发布时无毒无害，但不保证此程序能完全抵御wannacry病毒攻击，请您及时安装微软官方补丁或其它第三方杀毒软件。如果使用本程序后，wannacry仍然攻进了您的设备，由此发生的任何数据损坏等问题，我们不承担任何责任。如果您选择使用此程序，则默认您认可该声明。</p>
+<blockquote>
+<p>如需任何技术支持与帮助，请在评论区留言。</p>
+</blockquote>
+<p>下载地址：<a href="http://t.cn/Ral5pmO">http://t.cn/Ral5pmO</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于今天音频线事件的反思]]></title>
+        <id>https://hoverclouds.github.io/post/guan-yu-jin-tian-yin-pin-xian-shi-jian-de-fan-si/</id>
+        <link href="https://hoverclouds.github.io/post/guan-yu-jin-tian-yin-pin-xian-shi-jian-de-fan-si/">
+        </link>
+        <updated>2017-05-07T15:45:00.000Z</updated>
+        <content type="html"><![CDATA[<p>前日晚，我与子昂一起去《檀香刑》剧组的两个排练场地测试音箱、音频线。在测试过程中，我们选择了使用手机播放音频，测试没有问题后便离开了排练场地。但是，在今天的排练过程中，仍然出现了不可预料的失误：音频线连接电脑后，不能正常播放音频，导致了歌剧排练无法正常进行。不仅耽误了各部门人员紧张的时间，也耗费了其他工作人员的精力，去安排紧急抢救方案。关于此次事件，我有一些反思和感想，潦记如下。</p>
+<p>前天晚上被安排此项工作的时候，我没有考虑周全，只使用了手机去测试。一方面是，晚上比较疲劳了，有点图省事的成分；另一方面，自己简单地认为，只要手机测试可以了，别的设备就没什么问题。然而事实是，在周围人中相对比较熟悉电子产品的我，最终受到了电子产品给自己的教训。前一天，音频线的转接头是我去采购的，当时也并没有测试它的可用性，直到买回来以后也是。此外，音频线对手机和电脑等不同设备的兼容性是不一样的，转接口也是如此。当它们接在一起使用，更应该仔细排查其可用性。但这些都被我忽略了。这些本应是电子产品使用与维护方面的常识，却因我的大意而被忽视。<strong>这是我工作上的疏忽，因此给整个《檀香刑》剧组、给学院带来的负面影响，我应该负全部责任。</strong></p>
+<p>在下一步的工作中，我会多方面去考虑每一件事，尽可能从多方面去保证，每一件我经手的事情，都不出错，追求零失误；从源头上发现问题，并及时阻止它的发生和扩大。而当出现失误的时候，首先想到的不应该是逃避，而是如何去积极地解决问题，修补问题，并认真反思出现问题的原因，敢于承担责任。更重要的是，吸取每一次的经验教训，并时刻铭记在心，<strong>曾经出过的每一个纰漏，当打上补丁之后，就不允许它再漏。</strong></p>
+<p>都说允许犯错，但不允许犯同样的错。不过我觉得，我们现在处于紧张的排练阶段。当前，《檀香刑》歌剧的排练、筹备，是整个音乐学院上下首当其冲的大事，在戏剧排练正式开始的第一天，就因为我而出现这样的失误，是绝对不应该发生的。<strong>这样的错误，不仅不能有第二次，甚至连这第一次，都不应该出现。</strong></p>
+<p>今天下午，由于排练无需字幕组工作，我向杨老师申请了回宿舍休息，主要是洗澡洗衣各种修整。但到了晚上，当我打开朋友圈，看到同学们发的动态，他们排练的那种充实，那种累并快乐着的心态，让我发自内心的愧疚。其他人都在忙着，可我却在宿舍，为自己，忙里偷闲了一下午。不知道算不算不在状态，但也是需要杜绝的。学校为我们提供了良好的工作环境，跟积极向上的工作氛围，我没有很好地融入进去，也侧面说明了自己集体荣誉感不够强。<strong>调整心态，更加积极地面对工作，是我的当务之急。</strong> 不论于公于私，《檀香刑》剧组的每一次排练、每一件大事小事，都是宝贵的经验与财富。子昂说，“<strong>身上穿着檀香刑的工作服，就要对得起这身衣服。</strong>”我举双手双脚赞同。</p>
+<p>关于责任，我想结合自己所在的字幕组的工作，来谈一谈。</p>
+<p>字幕组人少，只有一位老师和包括我在内的两位同学。而主力，众所周知的，是我，一直在操作、调试字幕机。在前面两三个月的工作中，关于字幕机的管理、维护，我尽力去做到了最好，因为我知道，我的字幕组不及场务等工作组人多，很多工作，我自己不去完成，就没有人会去替我完成，更何况其他人也做不到。正是因为这份工作的特殊，我的存在才更加重要。**我时刻告诉自己，每一次排练，都尽可能不出差错，而我自己，永远不能倒下。**昨晚的联排中，字幕机由于靠墙、不通风，过热保护后，断线黑屏了两次。这种情况是第一次出现，我很庆幸，没有在正式演出的台上出现。原本我的计划就是把字幕机放在舞台两侧靠墙的地方，现在看来，要尽快想其它方案。关于过热保护的问题，我在今天白天联系了字幕机生产公司的相关人员，他们那边给出了排查方案，在下一步的联排中，我将按照这些方案，逐步排查字幕机还潜在的问题，争取在接下来的46天里，尽快让字幕机做到真正稳定，保证舞台上不会出问题。</p>
+<p>在此之前，我一直没有仔细想过，如果字幕机在舞台上，出现了类似今天音频线的问题，怎么办？现在我想，如果出了问题，我们字幕组当然是要承担责任的，而我，无疑要承担首要责任。这逃不掉。但这份责任，既然早早地就落到了我身上，我就应当吸取今天事情的教训，从现在起，对字幕机更加上心，多方面排查，把任何可能出现的问题都掐死在摇篮里。字幕机的系统一直不太稳定，我心里一清二楚。怎样解决现有问题，消除一切隐患，就看我自己的了。<strong>没有人能帮我，我更应该自己把它做到出色。</strong></p>
+<p>别的，不必再多说了。但愿以后这样的事情不再发生，希望歌剧《檀香刑》不会在字幕方面出任何差错。<strong>加油吧，为了同一个目标。</strong><br>
+<img src="https://7n.blog.singfind.com/96111494172324.jpg" alt="" loading="lazy"></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[回忆高中]]></title>
+        <id>https://hoverclouds.github.io/post/hui-yi-gao-zhong/</id>
+        <link href="https://hoverclouds.github.io/post/hui-yi-gao-zhong/">
+        </link>
+        <updated>2017-03-31T15:19:00.000Z</updated>
+        <content type="html"><![CDATA[<p>听闻 <a href="http://weibo.com/tsck" title="@泰山晚报">@泰山晚报</a> 晚报菌发的微博，说高中时期的酸甜苦辣。正好自己一直想找个机会回忆一下高中，不妨趁此写点什么。</p>
+<p>我毕业于山东省泰山中学。提到高中，最先想到的画面是高二，头顶上的风扇沙沙响；老师一个接一个讲着知识点，板书满满；隔壁幼儿园放起了单曲循环的儿歌；我回头看看表，终于快下课了，预谋着打铃就窜出去买个鸡肉卷，然后琴房排队上声乐。</p>
+<p>那时候啊，课业不及高三繁重，校园里各种活动丰富多彩，喜欢的人就坐在几米开外的前排，一帮死党分布在教学楼的各个屋子。</p>
+<p>那时候啊，总盼着老师忘记布置作业，总盼着体育老师从不生病请假，总盼着科技节读书节体育节能占用下午自习，总盼着那个女孩能多看自己几眼，总盼着琴房早点开门，总盼着专业老师心情大好，总盼着周末可以跟哥们出去浪里个浪，总盼着赶紧毕业，升入梦寐以求的大学……</p>
+<p>终于，大学了。可我却无比怀念高中的时光。泰安城不大，生活节奏缓慢。高中的每一天都过得有条不紊，每一件大事小事都按部就班。每天放了学都可以回家见到爸爸妈妈，在家里我就是小皇帝小公主。Right now，我在不远处的济南，周末可以想回就回，躲到家里享受温馨，平日里却总是忙了又忙，除了忙就是茫然，压力丝毫不小于高三。独自在外，肩负着更多责任，没有了高中的惬意、自由。生活的磨炼使我们失去了高中时思想初具成熟进而敢爱敢恨的能力。</p>
+<p>我怀念的，是泰中门口的鸡肉卷煎饼果子掉渣饼，是在琴房练琴一坐一下午站起来之后伸出的懒腰，是天黑还在校报编辑部改稿子桌上放的台灯，是专业老师对自己的夸赞，是班主任一次次不放弃我时的督促，是数学老师用红笔写在试卷上方的分数，是每次月考放榜前的紧张，是清早上学路上看到那个女孩的暗喜，是下晚自习后摸黑跟哥们去车区时的嬉笑打闹……</p>
+<p>我的高中生活，简单，无奇，转瞬即逝。曾无数次梦回高中，却只是梦。回首高中，恰如彩虹似的梦：读书，写作，岁月如歌。</p>
 ]]></content>
     </entry>
 </feed>

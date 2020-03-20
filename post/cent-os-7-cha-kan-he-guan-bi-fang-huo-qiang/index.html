@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>飞总吃不饱</title>
+<title>Cent OS 7 查看和关闭防火墙 | 飞总吃不饱</title>
 <meta name="description" content="瞎bb的自留地" />
 <link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico?v=1584719915076">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -91,16 +91,81 @@
   </div>
 </div>
 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Cent OS 7 查看和关闭防火墙
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-08-27
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
+                  # 开发
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>CentOS 7.0默认使用的是firewall作为防火墙<br>
+查看防火墙状态<br>
+firewall-cmd –state<br>
+停止firewall<br>
+systemctl stop firewalld.service<br>
+禁止firewall开机启动<br>
+systemctl disable firewalld.service</p>
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/vwvYtQ4yr/">开发</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/f1mgaBfk9Q/">生活</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/YAOwQ3Ffcv/">随感</a>
-          
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hoverclouds.github.io/post/hello-gridea/">
+              <h3 class="post-title">
+                Hello Gridea
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'ddc40f110fef17ae3916',
+    clientSecret: '3154c9c8a107e529ab0bab00db88232e6c190b86',
+    repo: 'hoverclouds.github.io',
+    owner: 'Hoverclouds',
+    admin: ['Hoverclouds'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 

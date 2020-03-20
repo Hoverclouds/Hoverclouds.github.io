@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>飞总吃不饱</title>
+<title>在win系统上搭建kms授权服务器 | 飞总吃不饱</title>
 <meta name="description" content="瞎bb的自留地" />
 <link rel="shortcut icon" href="https://hoverclouds.github.io/favicon.ico?v=1584719915076">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -91,16 +91,95 @@
   </div>
 </div>
 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              在win系统上搭建kms授权服务器
+            </h2>
+            <div class="post-info">
+              <span>
+                2018-09-04
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://hoverclouds.github.io/tag/vwvYtQ4yr/" class="post-tag">
+                  # 开发
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>⚠️<em>2019.10.6 更新：已重新整理步骤。</em></p>
+<p>先上地址：kms.singfind.com</p>
+<p>具体搭建流程：</p>
+<p><s>1.打开冰箱</s></p>
+<p><s>2.把大象装进去</s></p>
+<p>1.下载源码：<a href="https://pan.singfind.com/%E7%A7%81%E4%BA%BA%E5%AD%98%E6%A1%A3/kms_v1112.zip">https://pan.singfind.com/私人存档/kms_v1112.zip</a></p>
+<p>这里贴出项目原地址：<a href="https://github.com/Wind4/vlmcsd">https://github.com/Wind4/vlmcsd</a></p>
+<p>我已经打包好了win系统需要的 binaries\Windows\intel\vlmcsd-Windows-x64.exe或vlmcsd-Windows-x86.exe，请根据你的系统选择64位还是32位服务端。</p>
+<p>2.解压，放到C盘根目录，并改名为 vlmcsd.exe。</p>
+<p>3.用管理员用户运行命令</p>
+<pre><code>cd c:\kms
+vlmcsd –s –U /n –l c:\kms\vlmcsd.log
+</code></pre>
+<p>此处小写-s为安装为服务,大写-S为移除服务，在vlmcsd.log可查看已经激活的相关信息。</p>
+<p>4.再执行命令services.msc在“服务”中将Key Management Server服务设置为自动，并启动。</p>
+<p>5.这样kms服务端就安装好了，另外不要忘记在防火墙中将1688端口对外开放，因为KMS是通过1688端口提供激活服务的，这样别的服务器或电脑才能通过这个KMS服务器激活系统和office。</p>
+<p>6.解析域名。</p>
+<p>7.在需要激活的电脑上，以管理员权限运行命令：</p>
+<pre><code>slmgr /skms kms.singfind.com
+slmgr /ato
+slmgr /xpr</code></pre>
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/vwvYtQ4yr/">开发</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/f1mgaBfk9Q/">生活</a>
-          
-            <a class="tag" href="https://hoverclouds.github.io/tag/YAOwQ3Ffcv/">随感</a>
-          
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hoverclouds.github.io/post/linux-xia-crontab-e-ming-ling-cha-ru-ji-bao-cun/">
+              <h3 class="post-title">
+                linux 下crontab -e 命令插入及保存
+              </h3>
+            </a>
+          </div>
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: 'ddc40f110fef17ae3916',
+    clientSecret: '3154c9c8a107e529ab0bab00db88232e6c190b86',
+    repo: 'hoverclouds.github.io',
+    owner: 'Hoverclouds',
+    admin: ['Hoverclouds'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
