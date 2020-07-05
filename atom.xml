@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.singfind.com</id>
     <title>飞总吃不饱</title>
-    <updated>2020-07-05T16:59:33.325Z</updated>
+    <updated>2020-07-05T17:00:51.593Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.singfind.com"/>
     <link rel="self" href="https://blog.singfind.com/atom.xml"/>
@@ -63,7 +63,7 @@ document.getElementById("video").style.height=document.getElementById("video").s
 <p>如果以后有机会，时间充足的话，再从博客聊一聊别的剧，权当练习和分享了。</p>
 <blockquote>
 <p>And I Know it's only in my mind.</p>
-<p>——爱波宁 Eponine</p>
+<p>——剧中角色 爱波宁 Eponine</p>
 </blockquote>
 ]]></content>
     </entry>
