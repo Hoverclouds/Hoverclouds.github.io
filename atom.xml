@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.singfind.com</id>
     <title>飞总吃不饱</title>
-    <updated>2020-07-05T17:00:51.593Z</updated>
+    <updated>2021-02-19T18:14:07.779Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.singfind.com"/>
     <link rel="self" href="https://blog.singfind.com/atom.xml"/>
     <subtitle>瞎bb的自留地</subtitle>
     <logo>https://blog.singfind.com/images/avatar.png</logo>
     <icon>https://blog.singfind.com/favicon.ico</icon>
-    <rights>All rights reserved 2020, 飞总吃不饱</rights>
+    <rights>All rights reserved 2021, 飞总吃不饱</rights>
     <entry>
         <title type="html"><![CDATA[冉·阿让：无尽黑暗中的光明]]></title>
         <id>https://blog.singfind.com/post/ran-a-rang-wu-jin-hei-an-zhong-de-guang-ming/</id>
@@ -284,6 +284,23 @@ document.getElementById("video").style.height=document.getElementById("video").s
 <p>禁止firewall开机启动</p>
 <pre><code>systemctl disable firewalld.service
 </code></pre>
+<h2 id="2021-2-20-补充">2021-2-20 补充</h2>
+<pre><code>systemctl status firewalld 查看防火墙状态
+systemctl stop firewalld 停止防火墙
+systemctl disable firewalld 禁止防火墙
+systemctl start firewalld 启动防火墙
+</code></pre>
+<p>systemctl是从centos7.x开始引入的一个服务管理工具命令，融合了之前的service和chkconfig的功能于一体。</p>
+<p>在7版本以前或者没有安装systemclt的minimal版本，可以使用service控制防火墙。</p>
+<pre><code>service iptables status 查看防火墙状态
+service iptables stop 临时关闭防火墙
+service iptables start 启动防火墙
+service iptables restart 重启防火墙
+chkconfig iptables off 永久关闭防火墙
+chkconfig iptables on 永久关闭后开启防火墙
+</code></pre>
+<p>在CentOS 7里有几种防火墙共存：firewalld、iptables、ebtables。默认是使用firewalld来管理netfilter子系统，不过底层调用的命令仍然是iptables等。<br>
+firewalld跟iptables比起来，不好的地方是每个服务都需要去设置才能放行，因为默认是拒绝。而iptables里默认是每个服务是允许，需要拒绝的才去限制。</p>
 ]]></content>
     </entry>
     <entry>
